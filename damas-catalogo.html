@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Boutique - Catálogo</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li class="logo"><a href="index.html" ></a></li>
+            <li>    
+                <label for="buscar" class="buscar"></label>
+                <input type="search" id="buscar">
+            </li>
+            <li><a href="#" id="iniciar" class="button link-header">Iniciar Sesión</a>
+            <li><a href="registro.html" id="registrar" class="link-header">Regístrate</a></li>
+        </ul>
+    </header>
+    <div class="cintillo">
+        <a href="">Damas</a>
+        <a href="">Niñas</a>
+        <a href="" class="chart"></a>
+    </div>
+
+    <main class="main-catalogo">
+        <h1>TACONES PARA DAMAS</h1>
+        <div class="content-main">
+
+            <aside class="filtrar-precios-content">
+                <h3>Filtrar por precios</h3>
+                <form>
+                    <input type="number" step="10" min="10" max="500" value="10">
+                    <input type="submit" value="Filtrar">
+                </form>
+    
+                <h3>Filtrar por categorías</h3>
+                <form>
+                    <label for="color">Color</label>
+                    <input type="checkbox" id="color">
+    
+                    <label for="talla">Talla</label>
+                    <input type="checkbox" name="" id="talla">
+    
+                    <label for="modelo">Modelo</label>
+                    <input type="checkbox" name="" id="modelo">
+                    
+                    <input type="submit" value="Filtrar">
+                </form>
+                
+            </aside>
+    
+            <section class="catalogo-content">
+                <div class="content-img-precio">
+                    <a href="producto.html">
+                        <div class="img-zapato"></div>
+                        <h5>Modelo #13</h5>
+                        <h4> $ 150 </h4>
+                    </a>
+                </div>
+                <div class="content-img-precio">
+                    <div class="img-zapato"></div>
+                    <h5>Modelo #13</h5>
+                    <h4> $ 150 </h4>
+                </div>
+                <div class="content-img-precio">
+                    <div class="img-zapato"></div>
+                    <h5>Modelo #13</h5>
+                    <h4> $ 150 </h4>
+                </div>
+                <div class="content-img-precio">
+                    <div class="img-zapato"></div>
+                    <h5>Modelo #13</h5>
+                    <h4> $ 150 </h4>
+                </div>
+                <div class="content-img-precio">
+                    <div class="img-zapato"></div>
+                    <h5>Modelo #13</h5>
+                    <h4> $ 150 </h4>
+                </div>
+                <div class="content-img-precio">
+                    <div class="img-zapato"></div>
+                    <h5>Modelo #13</h5>
+                    <h4> $ 150 </h4>
+                </div>
+                <div class="content-img-precio">
+                    <div class="img-zapato"></div>
+                    <h5>Modelo #13</h5>
+                    <h4> $ 150 </h4>
+                </div>
+                <div class="content-img-precio">
+                    <div class="img-zapato"></div>
+                    <h5>Modelo #13</h5>
+                    <h4> $ 150 </h4>
+                </div>
+            </section>
+        </div>
+        <div class="paginacion">
+            <a href="#"> << Previo </a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Siguiente >> </a>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="pagos-medios">
+            <div class="logos-pagos">
+                <p>Métodos de Pago: </p>
+                <div class="visa"></div>
+                <div class="paypal"></div>
+                <div class="mastercard"></div>
+            </div>
+            <div class="logos-medios">
+                <p>Contáctanos: </p>
+                <div class="facebook"></div>
+                <div class="twitter"></div>
+                <div class="instagram"></div>
+            </div>
+        </div>
+        <div class="info">
+            <a href="">Quienes Somos</a>
+            <a href="">¿Algún Problema?</a>
+        </div>
+
+        <span>The Boutique &copy; 2019 </span> 
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <script src="index.js"></script>
+</body>
+</html>

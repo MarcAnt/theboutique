@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Boutique - Comprar</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li class="logo"><a href="index.html" ></a></li>
+            <li>    
+                <label for="buscar" class="buscar"></label>
+                <input type="search" id="buscar">
+            </li>
+            <li><a href="#" id="iniciar" class="button link-header">Iniciar Sesión</a>
+            <li><a href="registro.html" id="registrar" class="link-header">Regístrate</a></li>
+        </ul>
+    </header>
+    <div class="cintillo">
+        <a href="damas.html">Damas</a>
+        <a href="ninas.html">Niñas</a>
+        <a href="" class="chart" id="btn-modal"></a>
+    </div>
+
+    <main class="main-comprar">
+        <h1>Realiza tu Compra</h1>
+        <div class="logos-pagos">
+            <div class="visa"></div>
+            <div class="paypal"></div>
+            <div class="mastercard"></div>
+        </div>
+
+        <div class="content-comprar">
+            <div class="formulario-pago">
+                <h2>Método de Pago</h2>
+                <form>
+                    <h4>Pago con Tarjeta</h4>
+                    <div class="form-group-simple">
+
+                        <div class="form-center">
+    
+                            <label for="nombre">Nombre del Titular</label>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="form-center">
+    
+                            <label for="tarjetanum">Número de la tarjeta</label>
+                            <input type="number" id="tarjetanum">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-center">
+
+                            <label for="fechavencimiento">Fecha</label>
+                            <input type="date"  id="fechavencimiento">
+                        </div>
+                        <div class="form-center">
+
+                            <label for="year">Año</label>
+                            <input type="number" id="year">
+                        </div>
+                        <div class="form-center">
+
+                            <label for="ccv">Ccv</label>
+                            <input type="number" id="ccv">
+                        </div>
+                    </div>
+                    <input type="submit" value="Validar">
+                </form>
+            </div>    
+            <div class="tabla-comprar">
+                <table>
+                    <thead>
+                        <th>Artículos</th>
+                        <th>Especificaciones</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><div class="img-cartera"></div></td>
+                            <td>Modelo N° 85 Talla S Color Amarillo</td>
+                            <td>$ 150</td>
+                            <td>10</td>
+                            <td>$ 150</td>
+                            
+                        </tr>
+                        <tr>
+                            <td><div class="img-cartera"></div></td>
+                            <td>Modelo N° 85 Talla S Color Amarillo</td>
+                            <td>$ 150</td>
+                            <td>10</td>
+                            <td>$ 150</td>
+                            
+                        </tr>
+                    </tbody>
+                    
+                </table>
+
+                <div class="resumen-pedido">
+
+                    <div class="content-pedido">
+                        <div class="pedido-select">
+                            <p>Subtotal</p><span>$150</span>
+                        </div>
+                        <div class="pedido-select">
+                            <p>Envío</p><span>$50</span>
+                        </div>
+        
+                        <div class="pedido-select">
+                            <p>Total de Pedido</p><span>$200</span>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>    
+        </div>
+    </main>
+
+    <footer>
+        <div class="pagos-medios">
+            <div class="logos-pagos">
+                <p>Métodos de Pago: </p>
+                <div class="visa"></div>
+                <div class="paypal"></div>
+                <div class="mastercard"></div>
+            </div>
+            <div class="logos-medios">
+                <p>Contáctanos: </p>
+                <div class="facebook"></div>
+                <div class="twitter"></div>
+                <div class="instagram"></div>
+            </div>
+        </div>
+        <div class="info">
+            <a href="">Quienes Somos</a>
+            <a href="">¿Algún Problema?</a>
+        </div>
+
+        <span>The Boutique &copy; 2019 </span> 
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="close-content">
+            <p id="close">X</p>
+        </div>
+        <div class="box-modal" id="box-modal">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque placeat hic deleniti nisi obcaecati itaque incidunt! Explicabo, soluta assumenda dolore consectetur magni, tenetur maxime sunt ut facilis, ducimus provident ullam.</p>
+            <button>Registrarme</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <script src="index.js"></script>
+</body>
+</html>
